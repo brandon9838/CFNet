@@ -1,0 +1,22 @@
+1. install tensorflow-gpu==1.12.0 with cuda9.0 and cudnn7.6
+
+3.
+apt update
+apt install libgl1-mesa-glx
+
+4. install python packages
+pip install
+tensorpack==0.8.9
+open3d==0.8.0.0
+transforms3d
+lmdb==0.98
+matplotlib
+
+5. Compile tensorflow extensions, make sure the paths in .sh files and makefile match your environment
+cd tf_ops/grouping 
+sh tf_grouping_compile_abi.sh
+cd tf_ops/sampling 
+sh tf_sampling_compile_abi.sh
+cd pc_distance 
+make
+

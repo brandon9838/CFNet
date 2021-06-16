@@ -1,0 +1,2 @@
+#/bin/bash
+g++ tf_interpolate.cpp -o tf_interpolate_so.so -std=c++11  -shared -fPIC -I /home/gg1n1nder/.conda/envs/tensorflow/lib/python3.5/site-packages/tensorflow/include -I/home/gg1n1nder/.conda/envs/tensorflow/lib/python3.5/site-packages/tensorflow/include/external/nsync/public -L/home/gg1n1nder/.conda/envs/tensorflow/lib/python3.5/site-packages/tensorflow -ltensorflow_framework -lcudart -L /opt/ohpc/pub/nvidia/cuda/cuda-9.0/lib64/ -O2 -D_GLIBCXX_USE_CXX11_ABI=0

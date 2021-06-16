@@ -1,0 +1,21 @@
+SO3 rotation:
+python test.py --checkpoint 'log/CFNet_rot/model' --results_dir results/CFNet_rot --shift 0
+python test_F1.py
+python test_cls.py --model_type pointnet_cls --checkpoint log/pointnet_cls/model
+python test_cls.py --model_type dgcnn_cls --checkpoint log/dgcnn_cls/model
+
+SO3 ratation + shift input to center of mass:
+python test.py --checkpoint 'log/CFNet_rot+shift/model' --results_dir results/CFNet_rot+shift --shift 1
+python test_F1.py
+python test_cls.py --model_type pointnet_cls --checkpoint log/pointnet_cls/model
+python test_cls.py --model_type dgcnn_cls --checkpoint log/dgcnn_cls/model
+
+SO3 rotation (CFNet with fully connected decoder):
+python test_wo_dis.py
+python test_F1.py
+python test_cls.py --model_type pointnet_cls --checkpoint log/pointnet_cls/model
+python test_cls.py --model_type dgcnn_cls --checkpoint log/dgcnn_cls/model
+
+Multi-view integration:
+python multi_view.py
+
