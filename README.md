@@ -10,8 +10,8 @@ We implement CFNet on tensorflow 1.12.0 with cuda9.0 and cudnn7.6
  Modify the data directories according to your environment.
 ## Training
     python train.py
-## Cite this work
-    TODO
+[comment]: <> (## Cite this work
+    TODO)
 ## Acknowledgements
 This work borrows code from the following repositories
 - [PCN](https://github.com/wentaoyuan/pcn)
