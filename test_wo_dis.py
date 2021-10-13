@@ -87,8 +87,8 @@ def test(args):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--list_path', default='/media/bofan/linux/BOFAN/downloads/pcn-master/data/shapenet/test.list')
-    parser.add_argument('--data_dir', default='/media/bofan/linux/BOFAN/downloads/pcn-master/data/shapenet/test')
+    parser.add_argument('--list_path', default='./data/shapenet/test.list')
+    parser.add_argument('--data_dir', default='./data/shapenet/test')
     parser.add_argument('--model_type', default='CFNet_fc')
     parser.add_argument('--checkpoint', default='log/CFNet_fc_rot/model')
     parser.add_argument('--results_dir', default='results/CFNet_fc_rot')
