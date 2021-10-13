@@ -271,7 +271,7 @@ def test(args):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--lmdb_train', default='/media/bofan/linux/BOFAN/downloads/pcn-master/data/shapenet/train.lmdb')
+    parser.add_argument('--lmdb_train', default='./data/shapenet/train.lmdb')
     parser.add_argument('--model_type', default='CFNet_multiview')
     parser.add_argument('--checkpoint', default='log/CFNet_rot/model')
     parser.add_argument('--model_type_ptn', default='pointnet_cls')
