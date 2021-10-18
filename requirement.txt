@@ -18,6 +18,6 @@ sh tf_grouping_compile_abi.sh
 cd tf_ops/sampling 
 sh tf_sampling_compile_abi.sh
 cd pc_distance 
-
+make clean
 make
 
