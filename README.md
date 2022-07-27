@@ -1,5 +1,5 @@
 # CFNet
-This is the tensorflow implementation of [CFNet: Complementary Fusion Network for Rotation-Invariant Point Cloud Completion]().
+This is the tensorflow implementation of [CFNet: Complementary Fusion Network for Rotation-Invariant Point Cloud Completion](https://ieeexplore.ieee.org/abstract/document/9746388).
 ## Environment Setup
 We implement CFNet on tensorflow 1.12.0 with cuda9.0 and cudnn7.6
 - Follow the steps in requirement.txt to install the necessary packages and compile the tensorflow extensions 
